@@ -4,6 +4,6 @@ Google Speech recognition automatically recognizes your spoken words and display
 
 Prerequisites:
   
-  Python installed
-  Google Speech Recognition API installed
+  Python installed; 
+  Google Speech Recognition API installed; 
   Active Internet Connection (The faster the better)
