@@ -13,8 +13,7 @@ with sr.Microphone() as source:
 try:
     text = r.recognize_google(audio)
     print('Google thinks you said:\n' + text)
-    s_text = 'https://www.google.co.in/search?q=' + text
-    wb.get(chrome_path).open(s_text)
+    wb.get(chrome_path).open(text)
  
 except Exception as e:
     print (e)
