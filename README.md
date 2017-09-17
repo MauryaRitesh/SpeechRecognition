@@ -7,3 +7,15 @@ Prerequisites:
   Python installed; 
   Google Speech Recognition API installed; 
   Active Internet Connection (The faster the better)
+
+
+Download Python:
+  https://www.python.org/downloads/
+  
+Download Goolge SpeechRecognition:
+  https://pypi.python.org/pypi/SpeechRecognition/
+  
+                              OR
+Install using PIP:
+  pip install SpeechRecognition
+  
