@@ -62,7 +62,7 @@ def main(speech_file):
     str = jresponse
     match = re.search('(transcript": )(["\s])(.+?(?="))', str)
     if match:
-        print match.group(3)
+        print (match.group(3))
     else:
         print(jresponse)
     # [END send_request]
