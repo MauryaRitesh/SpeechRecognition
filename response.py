@@ -23,7 +23,7 @@ for item in soup.select(".r a"):
     print(myurl)
     break
 
-print ('Searching from ' + myurl)
+print ('Searching from:\n' + myurl)
 myurl = 'http://www.desy.de/user/projects/Physics/Relativity/SR/light_mass.html'
 f_response = requests.get(myurl)
 f_soup = BeautifulSoup(f_response.text,"lxml")
