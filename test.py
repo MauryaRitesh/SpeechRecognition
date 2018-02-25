@@ -1,13 +1,17 @@
-import speech_recognition as sr
+from gtts import gTTS
+import pygame
+import time, os
 
-r = sr.Recognizer()
+def tts(text, lang):
+    file = gTTS(text = text, lang = lang)
+    filename = 'temp.mp3'
+    file.save(filename)
 
-with sr.Microphone() as source:
-    print ('Say Something!')
-    audio = r.listen(source)
-    print ('Done!')
- 
-text = r.recognize_google(audio)
-print (text)
-
-print(' '.join(format(ord(x), 'b') for x in text))
+    pygame.init()
+    pygame.mixer.init()
+    clock = pygame.time.Clock()
+    pygame.mixer.music.load(file)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        print "Playing..."
+        clock.tick(1000)
