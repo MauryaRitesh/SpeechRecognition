@@ -25,15 +25,16 @@ Download Goolge SpeechRecognition:
   
                               OR
 Install using PIP:
-  pip install SpeechRecognition
+
+      pip install SpeechRecognition
   
-  pip install bs4
+      pip install bs4
   
-  pip install pyglet
+      pip install pyglet
   
-  pip install gtts
+      pip install gtts
   
-  pip install pygame
+      pip install pygame
  
  Install all these dependencies and run any of the given programs, that will run Perfectly.
  
